@@ -1,0 +1,21 @@
+# Ein Ticker pro Zeile (Yahoo-Finance-Schreibweise). Zeilen mit # werden ignoriert.
+# Nur Ticker hier eintragen, keine Betraege und keine Stueckzahlen: das Repo ist oeffentlich.
+
+# Deine Einzelaktien (US-Listing)
+NVDA
+META
+NOW
+ASML
+
+# Makro-Score (alle acht werden gebraucht)
+SPY
+RSP
+IWM
+HYG
+LQD
+TLT
+XLY
+XLP
+
+# UCITS-ETFs / Fonds: hier die Yahoo-Ticker der Boersenzeile eintragen, die du haeltst
+# (Beispielschreibweise: XXXX.DE). Nicht raten: auf finance.yahoo.com nach der ISIN suchen.
