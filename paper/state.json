@@ -1,0 +1,63 @@
+{
+ "updated_utc": "2026-11-13 19:48",
+ "start_date": "2026-11-13",
+ "end_date": "2026-11-20",
+ "strategies": {
+  "Vorsichtig": {
+   "status": "laufend",
+   "weights": {
+    "SPY": 1.0
+   },
+   "entry_date": "2026-11-13",
+   "last_date": "2026-11-13",
+   "value_eur": 99.0,
+   "net_after_exit_fee_eur": 98.0,
+   "change_pct_net": -2.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-13",
+     "value_eur": 99.0
+    }
+   ]
+  },
+  "Ausgewogen": {
+   "status": "laufend",
+   "weights": {
+    "NVDA": 0.5,
+    "META": 0.5
+   },
+   "entry_date": "2026-11-13",
+   "last_date": "2026-11-13",
+   "value_eur": 98.0,
+   "net_after_exit_fee_eur": 96.0,
+   "change_pct_net": -4.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-13",
+     "value_eur": 98.0
+    }
+   ]
+  },
+  "Riskant": {
+   "status": "laufend",
+   "weights": {
+    "TQQQ": 0.5,
+    "BTC-USD": 0.5
+   },
+   "entry_date": "2026-11-13",
+   "last_date": "2026-11-13",
+   "value_eur": 98.0,
+   "net_after_exit_fee_eur": 96.0,
+   "change_pct_net": -4.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-13",
+     "value_eur": 98.0
+    }
+   ]
+  }
+ }
+}

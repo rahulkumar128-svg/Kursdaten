@@ -1,77 +1,95 @@
 {
- "updated_utc": "2026-11-12 23:09",
+ "updated_utc": "2026-11-13 19:48",
  "symbols": {
   "NVDA": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "META": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "NOW": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "ASML": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "SPY": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "RSP": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "IWM": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "HYG": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "LQD": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "TLT": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "XLY": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
   },
   "XLP": {
    "status": "ok",
-   "bars": 501,
+   "bars": 502,
    "first": "2024-11-13",
-   "last": "2026-11-12"
+   "last": "2026-11-13"
+  },
+  "TQQQ": {
+   "status": "ok",
+   "bars": 502,
+   "first": "2024-11-13",
+   "last": "2026-11-13"
+  },
+  "BTC-USD": {
+   "status": "ok",
+   "bars": 731,
+   "first": "2024-11-13",
+   "last": "2026-11-13"
+  },
+  "EURUSD=X": {
+   "status": "ok",
+   "bars": 518,
+   "first": "2024-11-13",
+   "last": "2026-11-13"
   }
  }
 }
