@@ -1,0 +1,4 @@
+# Ans Ende von tickers.txt anhaengen (fuer das Paper-Trading)
+TQQQ
+BTC-USD
+EURUSD=X

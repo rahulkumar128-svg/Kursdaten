@@ -1,0 +1,13 @@
+{
+  "hinweis": "Reine Simulation mit virtuellem Geld. Keine Anlageberatung, keine echten Orders.",
+  "start_date": "2026-11-13",
+  "end_date": "2026-11-20",
+  "start_cash_eur": 100,
+  "fee_eur_per_order": 1.0,
+  "fx_ticker": "EURUSD=X",
+  "strategies": {
+    "Vorsichtig": { "SPY": 1.0 },
+    "Ausgewogen": { "NVDA": 0.5, "META": 0.5 },
+    "Riskant": { "TQQQ": 0.5, "BTC-USD": 0.5 }
+  }
+}
