@@ -21,11 +21,13 @@ jobs:
         run: pip install yfinance
       - name: Kurse laden
         run: python3 scripts/fetch_prices.py
+      - name: Paper-Trading auswerten
+        run: python3 scripts/paper_trading.py
       - name: Aenderungen committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data paper
           if git diff --cached --quiet; then
             echo "Keine Aenderungen"
           else
