@@ -19,3 +19,6 @@ XLP
 
 # UCITS-ETFs / Fonds: hier die Yahoo-Ticker der Boersenzeile eintragen, die du haeltst
 # (Beispielschreibweise: XXXX.DE). Nicht raten: auf finance.yahoo.com nach der ISIN suchen.
+   TQQQ
+   BTC-USD
+   EURUSD=X
