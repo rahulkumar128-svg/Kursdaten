@@ -2,7 +2,7 @@
 """Paper-Trading: simuliert 100 EUR (virtuell) in mehreren Risikostufen auf Basis von data/<TICKER>.csv.
 
 Regeln: Einstieg zum Schlusskurs am start_date (bzw. erstem Handelstag danach), Bruchstuecke erlaubt,
-Gebuehr pro Order, Kurse in USD werden mit data/<fx_ticker>.csv (USD je EUR) in EUR umgerechnet.
+Gebuehr pro Order, Ticker auf .DE oder -EUR gelten als Euro-Kurse; andere (USD) werden mit data/<fx_ticker>.csv umgerechnet.
 Ausgabe: paper/state.json und paper/report.md. Keine echten Orders.
 """
 from __future__ import annotations
@@ -22,20 +22,33 @@ def load_close(ticker: str) -> dict[str, float]:
         return {r["Date"]: float(r["Close"]) for r in csv.DictReader(f)}
 
 
+def is_eur(ticker: str) -> bool:
+    """Ticker, die schon in Euro notieren (deutsche Boersen .DE, Krypto -EUR)."""
+    t = ticker.upper()
+    return t.endswith(".DE") or t.endswith("-EUR")
+
+
 def run(cfg: dict) -> dict:
     start, end = cfg["start_date"], cfg["end_date"]
     cash, fee = float(cfg["start_cash_eur"]), float(cfg["fee_eur_per_order"])
-    fx = load_close(cfg["fx_ticker"])  # USD je EUR
+    need_fx = any(not is_eur(t) for w in cfg["strategies"].values() for t in w)
+    fx = load_close(cfg["fx_ticker"]) if need_fx else {}  # USD je EUR
     fx_dates = sorted(fx)
     result = {"updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
               "start_date": start, "end_date": end, "strategies": {}}
 
-    def fx_on(d: str) -> float:
+    def fx_on(d: str, t: str = "") -> float:
+        if is_eur(t):
+            return 1.0
         prev = [x for x in fx_dates if x <= d]
         return fx[prev[-1]] if prev else fx[fx_dates[0]]
 
     for name, weights in cfg["strategies"].items():
-        prices = {t: load_close(t) for t in weights}
+        try:
+            prices = {t: load_close(t) for t in weights}
+        except FileNotFoundError as e:
+            result["strategies"][name] = {"status": f"Kursdaten fehlen ({e})", "weights": weights}
+            continue
         common = sorted(set.intersection(*[set(p) for p in prices.values()]))
         days = [d for d in common if start <= d <= end]
         if not days:
@@ -43,10 +56,10 @@ def run(cfg: dict) -> dict:
             continue
         d0 = days[0]
         investable = cash - fee * len(weights)
-        shares = {t: investable * w / (prices[t][d0] / fx_on(d0)) for t, w in weights.items()}
+        shares = {t: investable * w / (prices[t][d0] / fx_on(d0, t)) for t, w in weights.items()}
         curve = []
         for d in days:
-            val = sum(shares[t] * prices[t][d] / fx_on(d) for t in weights)
+            val = sum(shares[t] * prices[t][d] / fx_on(d, t) for t in weights)
             curve.append({"date": d, "value_eur": round(val, 2)})
         last = curve[-1]
         net_exit = last["value_eur"] - fee * len(weights)
@@ -75,7 +88,7 @@ def report(res: dict, cfg: dict) -> str:
             L.append(f"| {n} | {s['status']} (Kurs {s['last_date']}) | {s['value_eur']:.2f} | "
                      f"{s['net_after_exit_fee_eur']:.2f} | {s['change_pct_net']:+.2f} % | {s['max_drawdown_pct']:.2f} % |")
     L += ["", f"Annahmen: Einstieg zum Schlusskurs, {cfg['fee_eur_per_order']:.2f} EUR je Order (Kauf und Verkauf), "
-          "Umrechnung USD in EUR zum Tageskurs, keine Steuern."]
+          "Kurse in EUR (Xetra bzw. Krypto in EUR), US-Ticker werden zum Tageskurs umgerechnet, keine Steuern."]
     return "\n".join(L) + "\n"
 
 
