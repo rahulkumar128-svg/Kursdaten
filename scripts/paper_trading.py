@@ -23,9 +23,9 @@ def load_close(ticker: str) -> dict[str, float]:
 
 
 def is_eur(ticker: str) -> bool:
-    """Ticker, die schon in Euro notieren (deutsche Boersen .DE, Krypto -EUR)."""
+    """Ticker, die schon in Euro notieren (Euro-Boersen wie .DE, .MI, .PA; Krypto -EUR)."""
     t = ticker.upper()
-    return t.endswith(".DE") or t.endswith("-EUR")
+    return t.endswith("-EUR") or t.endswith((".DE", ".F", ".MI", ".PA", ".AS", ".MC", ".BR", ".VI", ".HE", ".LS", ".IR"))
 
 
 def run(cfg: dict) -> dict:
