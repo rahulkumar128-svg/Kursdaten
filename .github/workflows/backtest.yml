@@ -1,0 +1,35 @@
+name: Backtest Auswahlverfahren
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # sonntags 06:00 UTC
+    - cron: "0 6 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pakete installieren
+        run: pip install yfinance pandas numpy
+      - name: Backtest rechnen
+        run: python3 scripts/backtest.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backtest
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen"
+          else
+            git commit -m "Backtest aktualisiert"
+            git push
+          fi
