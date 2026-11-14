@@ -1,63 +1,27 @@
 {
- "updated_utc": "2026-11-13 19:48",
+ "updated_utc": "2026-11-14 01:00",
  "start_date": "2026-11-13",
  "end_date": "2026-11-20",
  "strategies": {
   "Vorsichtig": {
-   "status": "laufend",
+   "status": "wartet auf erste Kurse",
    "weights": {
-    "SPY": 1.0
-   },
-   "entry_date": "2026-11-13",
-   "last_date": "2026-11-13",
-   "value_eur": 99.0,
-   "net_after_exit_fee_eur": 98.0,
-   "change_pct_net": -2.0,
-   "max_drawdown_pct": 0.0,
-   "curve": [
-    {
-     "date": "2026-11-13",
-     "value_eur": 99.0
-    }
-   ]
+    "SXR8.DE": 1.0
+   }
   },
   "Ausgewogen": {
-   "status": "laufend",
+   "status": "wartet auf erste Kurse",
    "weights": {
-    "NVDA": 0.5,
-    "META": 0.5
-   },
-   "entry_date": "2026-11-13",
-   "last_date": "2026-11-13",
-   "value_eur": 98.0,
-   "net_after_exit_fee_eur": 96.0,
-   "change_pct_net": -4.0,
-   "max_drawdown_pct": 0.0,
-   "curve": [
-    {
-     "date": "2026-11-13",
-     "value_eur": 98.0
-    }
-   ]
+    "NVD.DE": 0.5,
+    "FB2A.DE": 0.5
+   }
   },
   "Riskant": {
-   "status": "laufend",
+   "status": "Kursdaten fehlen (Keine Kursdatei fuer 3QQQ.DE (Ticker in tickers.txt eintragen))",
    "weights": {
-    "TQQQ": 0.5,
-    "BTC-USD": 0.5
-   },
-   "entry_date": "2026-11-13",
-   "last_date": "2026-11-13",
-   "value_eur": 98.0,
-   "net_after_exit_fee_eur": 96.0,
-   "change_pct_net": -4.0,
-   "max_drawdown_pct": 0.0,
-   "curve": [
-    {
-     "date": "2026-11-13",
-     "value_eur": 98.0
-    }
-   ]
+    "3QQQ.DE": 0.5,
+    "BTC-EUR": 0.5
+   }
   }
  }
 }
