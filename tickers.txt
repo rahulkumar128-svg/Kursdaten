@@ -27,3 +27,5 @@ NVD.DE
 FB2A.DE
 3QQQ.DE
 BTC-EUR
+# Ans Ende von tickers.txt anhaengen (ersetzt 3QQQ.DE, das Yahoo nicht kennt)
+QQQ3.MI
