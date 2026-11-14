@@ -1,7 +1,7 @@
 {
- "updated_utc": "2026-11-14 01:00",
- "start_date": "2026-11-13",
- "end_date": "2026-11-20",
+ "updated_utc": "2026-11-14 15:09",
+ "start_date": "2026-11-16",
+ "end_date": "2026-11-23",
  "strategies": {
   "Vorsichtig": {
    "status": "wartet auf erste Kurse",
@@ -17,9 +17,9 @@
    }
   },
   "Riskant": {
-   "status": "Kursdaten fehlen (Keine Kursdatei fuer 3QQQ.DE (Ticker in tickers.txt eintragen))",
+   "status": "wartet auf erste Kurse",
    "weights": {
-    "3QQQ.DE": 0.5,
+    "QQQ3.MI": 0.5,
     "BTC-EUR": 0.5
    }
   }
