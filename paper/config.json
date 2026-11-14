@@ -1,13 +1,21 @@
 {
   "hinweis": "Reine Simulation mit virtuellem Geld. Keine Anlageberatung, keine echten Orders.",
-  "start_date": "2026-11-13",
-  "end_date": "2026-11-20",
+  "start_date": "2026-11-16",
+  "end_date": "2026-11-23",
   "start_cash_eur": 100,
   "fee_eur_per_order": 1.0,
   "fx_ticker": "EURUSD=X",
   "strategies": {
-    "Vorsichtig": { "SXR8.DE": 1.0 },
-    "Ausgewogen": { "NVD.DE": 0.5, "FB2A.DE": 0.5 },
-    "Riskant": { "3QQQ.DE": 0.5, "BTC-EUR": 0.5 }
+    "Vorsichtig": {
+      "SXR8.DE": 1.0
+    },
+    "Ausgewogen": {
+      "NVD.DE": 0.5,
+      "FB2A.DE": 0.5
+    },
+    "Riskant": {
+      "QQQ3.MI": 0.5,
+      "BTC-EUR": 0.5
+    }
   }
 }
