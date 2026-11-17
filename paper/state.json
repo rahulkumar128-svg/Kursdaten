@@ -1,27 +1,63 @@
 {
- "updated_utc": "2026-11-16 23:10",
+ "updated_utc": "2026-11-17 23:17",
  "start_date": "2026-11-16",
  "end_date": "2026-11-23",
  "strategies": {
   "Vorsichtig": {
-   "status": "wartet auf erste Kurse",
+   "status": "laufend",
    "weights": {
     "SXR8.DE": 1.0
-   }
+   },
+   "entry_date": "2026-11-16",
+   "last_date": "2026-11-16",
+   "value_eur": 99.0,
+   "net_after_exit_fee_eur": 98.0,
+   "change_pct_net": -2.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-16",
+     "value_eur": 99.0
+    }
+   ]
   },
   "Ausgewogen": {
-   "status": "wartet auf erste Kurse",
+   "status": "laufend",
    "weights": {
     "NVD.DE": 0.5,
     "FB2A.DE": 0.5
-   }
+   },
+   "entry_date": "2026-11-16",
+   "last_date": "2026-11-16",
+   "value_eur": 98.0,
+   "net_after_exit_fee_eur": 96.0,
+   "change_pct_net": -4.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-16",
+     "value_eur": 98.0
+    }
+   ]
   },
   "Riskant": {
-   "status": "wartet auf erste Kurse",
+   "status": "laufend",
    "weights": {
     "QQQ3.MI": 0.5,
     "BTC-EUR": 0.5
-   }
+   },
+   "entry_date": "2026-11-16",
+   "last_date": "2026-11-16",
+   "value_eur": 98.0,
+   "net_after_exit_fee_eur": 96.0,
+   "change_pct_net": -4.0,
+   "max_drawdown_pct": 0.0,
+   "curve": [
+    {
+     "date": "2026-11-16",
+     "value_eur": 98.0
+    }
+   ]
   }
  }
 }
