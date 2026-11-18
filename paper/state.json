@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-17 23:17",
+ "updated_utc": "2026-11-18 23:15",
  "start_date": "2026-11-16",
  "end_date": "2026-11-23",
  "strategies": {
@@ -9,15 +9,19 @@
     "SXR8.DE": 1.0
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-16",
-   "value_eur": 99.0,
-   "net_after_exit_fee_eur": 98.0,
-   "change_pct_net": -2.0,
-   "max_drawdown_pct": 0.0,
+   "last_date": "2026-11-17",
+   "value_eur": 96.72,
+   "net_after_exit_fee_eur": 95.72,
+   "change_pct_net": -4.28,
+   "max_drawdown_pct": -2.3,
    "curve": [
     {
      "date": "2026-11-16",
      "value_eur": 99.0
+    },
+    {
+     "date": "2026-11-17",
+     "value_eur": 96.72
     }
    ]
   },
@@ -28,15 +32,19 @@
     "FB2A.DE": 0.5
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-16",
-   "value_eur": 98.0,
-   "net_after_exit_fee_eur": 96.0,
-   "change_pct_net": -4.0,
-   "max_drawdown_pct": 0.0,
+   "last_date": "2026-11-17",
+   "value_eur": 94.82,
+   "net_after_exit_fee_eur": 92.82,
+   "change_pct_net": -7.18,
+   "max_drawdown_pct": -3.24,
    "curve": [
     {
      "date": "2026-11-16",
      "value_eur": 98.0
+    },
+    {
+     "date": "2026-11-17",
+     "value_eur": 94.82
     }
    ]
   },
@@ -47,15 +55,19 @@
     "BTC-EUR": 0.5
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-16",
-   "value_eur": 98.0,
-   "net_after_exit_fee_eur": 96.0,
-   "change_pct_net": -4.0,
-   "max_drawdown_pct": 0.0,
+   "last_date": "2026-11-17",
+   "value_eur": 94.31,
+   "net_after_exit_fee_eur": 92.31,
+   "change_pct_net": -7.69,
+   "max_drawdown_pct": -3.77,
    "curve": [
     {
      "date": "2026-11-16",
      "value_eur": 98.0
+    },
+    {
+     "date": "2026-11-17",
+     "value_eur": 94.31
     }
    ]
   }
