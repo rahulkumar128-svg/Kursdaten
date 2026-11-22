@@ -1,17 +1,17 @@
 # Backtest: Auswahlverfahren ueber S&P 500 + DAX 40
-Stand: 2026-11-15 06:50 UTC. Reine Simulation, keine Anlageberatung.
+Stand: 2026-11-22 06:53 UTC. Reine Simulation, keine Anlageberatung.
 
-Zeitraum: 2022-11-04 bis 2026-11-02, 207 Wochen (nicht ueberlappend). Aktien geladen: 538 von 544. Je Regel 5 Aktien, Haltedauer 5 Handelstage.
+Zeitraum: 2022-11-11 bis 2026-11-09, 207 Wochen (nicht ueberlappend). Aktien geladen: 539 von 544. Je Regel 5 Aktien, Haltedauer 5 Handelstage.
 
 ## Rendite pro Woche vor Kosten (Brutto)
 
 | Regel | Mittel | Median | Wochen im Plus | schlechteste | beste | Gesamt (aufgezinst) |
 |---|---|---|---|---|---|---|
-| vorsichtig | +0.25 % | +0.30 % | 57 % | -8.2 % | +5.6 % | +64 % |
-| ausgewogen | +0.21 % | +0.28 % | 56 % | -9.4 % | +7.0 % | +47 % |
-| riskant | +0.67 % | +0.43 % | 54 % | -16.2 % | +19.8 % | +189 % |
-| zufall | +0.37 % | +0.38 % | 61 % | -11.6 % | +7.4 % | +105 % |
-| alle_aktien | +0.38 % | +0.42 % | 61 % | -11.8 % | +7.2 % | +111 % |
+| vorsichtig | +0.27 % | +0.31 % | 57 % | -8.2 % | +5.6 % | +68 % |
+| ausgewogen | +0.23 % | +0.28 % | 56 % | -9.4 % | +7.0 % | +52 % |
+| riskant | +0.58 % | +0.39 % | 53 % | -16.2 % | +19.8 % | +142 % |
+| zufall | +0.35 % | +0.49 % | 62 % | -12.0 % | +7.2 % | +98 % |
+| alle_aktien | +0.35 % | +0.41 % | 60 % | -11.8 % | +7.3 % | +97 % |
 
 ## Besser als Zufall?
 
@@ -19,9 +19,9 @@ Unterschied pro Woche zur Zufallsauswahl (Mittel aus vielen Ziehungen). t-Wert u
 
 | Regel | Mittel Unterschied | t-Wert | Wochen besser als Zufall |
 |---|---|---|---|
-| vorsichtig | -0.11 % | -0.79 | 49 % |
-| ausgewogen | -0.16 % | -1.12 | 48 % |
-| riskant | +0.30 % | +0.88 | 51 % |
+| vorsichtig | -0.08 % | -0.59 | 48 % |
+| ausgewogen | -0.12 % | -0.89 | 47 % |
+| riskant | +0.23 % | +0.68 | 52 % |
 
 ## Kosten
 
@@ -29,9 +29,9 @@ Bei 100 EUR und 1.00 EUR je Order kosten 5 Aktien pro Woche (Kauf und Verkauf) e
 
 | Regel | Mittel nach Kosten |
 |---|---|
-| vorsichtig | -9.75 % |
-| ausgewogen | -9.79 % |
-| riskant | -9.33 % |
+| vorsichtig | -9.73 % |
+| ausgewogen | -9.77 % |
+| riskant | -9.42 % |
 
 ## Was die Zahlen nicht zeigen
 
