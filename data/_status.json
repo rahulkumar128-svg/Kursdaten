@@ -1,113 +1,113 @@
 {
- "updated_utc": "2026-11-23 23:18",
+ "updated_utc": "2026-11-24 23:17",
  "symbols": {
   "NVDA": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "META": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "NOW": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "ASML": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "SPY": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "RSP": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "IWM": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "HYG": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "LQD": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "TLT": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "XLY": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "XLP": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "TQQQ": {
    "status": "ok",
-   "bars": 500,
+   "bars": 501,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "BTC-USD": {
    "status": "ok",
    "bars": 731,
-   "first": "2024-11-23",
-   "last": "2026-11-23"
+   "first": "2024-11-24",
+   "last": "2026-11-24"
   },
   "EURUSD=X": {
    "status": "ok",
-   "bars": 516,
+   "bars": 517,
    "first": "2024-11-25",
-   "last": "2026-11-23"
+   "last": "2026-11-24"
   },
   "SXR8.DE": {
    "status": "ok",
-   "bars": 502,
+   "bars": 503,
    "first": "2024-11-25",
-   "last": "2026-11-20"
+   "last": "2026-11-23"
   },
   "NVD.DE": {
    "status": "ok",
-   "bars": 504,
+   "bars": 505,
    "first": "2024-11-25",
-   "last": "2026-11-20"
+   "last": "2026-11-23"
   },
   "FB2A.DE": {
    "status": "ok",
-   "bars": 504,
+   "bars": 505,
    "first": "2024-11-25",
-   "last": "2026-11-20"
+   "last": "2026-11-23"
   },
   "3QQQ.DE": {
    "status": "empty",
@@ -116,14 +116,14 @@
   "BTC-EUR": {
    "status": "ok",
    "bars": 731,
-   "first": "2024-11-23",
-   "last": "2026-11-23"
+   "first": "2024-11-24",
+   "last": "2026-11-24"
   },
   "QQQ3.MI": {
    "status": "ok",
-   "bars": 502,
+   "bars": 503,
    "first": "2024-11-25",
-   "last": "2026-11-20"
+   "last": "2026-11-23"
   }
  }
 }

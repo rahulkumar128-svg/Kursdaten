@@ -1,18 +1,18 @@
 {
- "updated_utc": "2026-11-23 23:18",
+ "updated_utc": "2026-11-24 23:17",
  "start_date": "2026-11-16",
  "end_date": "2026-11-23",
  "strategies": {
   "Vorsichtig": {
-   "status": "laufend",
+   "status": "abgeschlossen",
    "weights": {
     "SXR8.DE": 1.0
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-20",
-   "value_eur": 93.55,
-   "net_after_exit_fee_eur": 92.55,
-   "change_pct_net": -7.45,
+   "last_date": "2026-11-23",
+   "value_eur": 96.87,
+   "net_after_exit_fee_eur": 95.87,
+   "change_pct_net": -4.13,
    "max_drawdown_pct": -5.51,
    "curve": [
     {
@@ -34,20 +34,24 @@
     {
      "date": "2026-11-20",
      "value_eur": 93.55
+    },
+    {
+     "date": "2026-11-23",
+     "value_eur": 96.87
     }
    ]
   },
   "Ausgewogen": {
-   "status": "laufend",
+   "status": "abgeschlossen",
    "weights": {
     "NVD.DE": 0.5,
     "FB2A.DE": 0.5
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-20",
-   "value_eur": 86.57,
-   "net_after_exit_fee_eur": 84.57,
-   "change_pct_net": -15.43,
+   "last_date": "2026-11-23",
+   "value_eur": 97.82,
+   "net_after_exit_fee_eur": 95.82,
+   "change_pct_net": -4.18,
    "max_drawdown_pct": -11.66,
    "curve": [
     {
@@ -69,20 +73,24 @@
     {
      "date": "2026-11-20",
      "value_eur": 86.57
+    },
+    {
+     "date": "2026-11-23",
+     "value_eur": 97.82
     }
    ]
   },
   "Riskant": {
-   "status": "laufend",
+   "status": "abgeschlossen",
    "weights": {
     "QQQ3.MI": 0.5,
     "BTC-EUR": 0.5
    },
    "entry_date": "2026-11-16",
-   "last_date": "2026-11-20",
-   "value_eur": 84.0,
-   "net_after_exit_fee_eur": 82.0,
-   "change_pct_net": -18.0,
+   "last_date": "2026-11-23",
+   "value_eur": 90.97,
+   "net_after_exit_fee_eur": 88.97,
+   "change_pct_net": -11.03,
    "max_drawdown_pct": -14.29,
    "curve": [
     {
@@ -104,6 +112,10 @@
     {
      "date": "2026-11-20",
      "value_eur": 84.0
+    },
+    {
+     "date": "2026-11-23",
+     "value_eur": 90.97
     }
    ]
   }
