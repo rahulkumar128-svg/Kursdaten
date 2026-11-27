@@ -1,5 +1,5 @@
 # Paper-Trading: 100 EUR virtuell, 2026-11-16 bis 2026-11-23
-Stand: 2026-11-26 23:23 UTC. Reine Simulation, keine Anlageberatung.
+Stand: 2026-11-27 23:20 UTC. Reine Simulation, keine Anlageberatung.
 
 | Variante | Status | Wert (EUR) | Netto nach Verkauf (EUR) | Veraenderung | Tiefster Rueckgang |
 |---|---|---|---|---|---|
